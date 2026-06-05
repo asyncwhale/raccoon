@@ -1,0 +1,7 @@
+History:
+* commit abc123
+|\
+| * commit def456
+* | commit 789abc
+|/
+* commit 000000

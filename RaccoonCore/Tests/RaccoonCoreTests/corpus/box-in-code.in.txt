@@ -1,0 +1,6 @@
+Snippet:[0m
+
+    a = "│"
+    b = "─"
+
+Done.

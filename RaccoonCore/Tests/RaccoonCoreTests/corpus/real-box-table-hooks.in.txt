@@ -1,0 +1,11 @@
+[35m[plugins][39m [36mchat_doc: Registered chat_doc[39m
+
+Hooks (3/3 ready)
+┌──────────┬──────────────────────┬────────────┐
+│ Status   │ Hook                       │ Source     │
+├──────────┼──────────────────────┼────────────┤
+│ ✓ ready  │ 🚀 boot-md                 │ demo-      │
+│          │                            │ bundled    │
+│ ✓ ready  │ 📝 command-logger          │ demo-      │
+│          │                            │ bundled    │
+└──────────┴──────────────────────┴────────────┘

@@ -1,0 +1,1 @@
+我们使用 docker compose 来启动服务，端口被占用了需要 release the port first

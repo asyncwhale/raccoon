@@ -1,0 +1,6 @@
+Snippet:
+
+    a = "│"
+    b = "─"
+
+Done.

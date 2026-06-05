@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Distribution method: Developer ID (direct, not App Store) -->
+    <key>method</key>
+    <string>developer-id</string>
+
+    <!-- Team ID for signing -->
+    <key>teamID</key>
+    <string>SET_YOUR_TEAM_ID_HERE</string>
+
+    <!-- Hardened Runtime is required for notarization -->
+    <key>hardened-runtime</key>
+    <true/>
+
+    <!-- Let Xcode pick the signing certificate automatically from the keychain -->
+    <key>signingStyle</key>
+    <string>automatic</string>
+
+    <!-- Strip Swift standard libraries from the export (they are bundled in macOS) -->
+    <key>stripSwiftSymbols</key>
+    <true/>
+</dict>
+</plist>

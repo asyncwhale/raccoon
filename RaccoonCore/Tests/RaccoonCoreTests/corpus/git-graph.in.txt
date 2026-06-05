@@ -1,0 +1,7 @@
+History:
+[33m* commit abc123[0m
+|\
+| * commit def456
+* | commit 789abc
+|/
+* commit 000000

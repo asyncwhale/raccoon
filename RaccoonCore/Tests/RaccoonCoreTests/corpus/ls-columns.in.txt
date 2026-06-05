@@ -1,0 +1,7 @@
+total 48
+drwxr-xr-x@  6 dev  staff    192  5月 10 14:22 .
+drwxr-xr-x@ 12 dev  staff    384  5月  9 09:01 ..
+-rw-r--r--@  1 dev  staff   1234  5月 10 14:20 Package.swift
+-rw-r--r--@  1 dev  staff   2048  5月 10 11:05 README.md
+-rw-r--r--@  1 dev  staff    512  5月 10 13:47 main.swift
+drwxr-xr-x@  3 dev  staff     96  5月 10 10:30 src

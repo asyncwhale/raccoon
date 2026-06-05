@@ -1,0 +1,12 @@
+项目结构如下：
+
+```
+my-app/
+├── Package.swift
+├── Sources/
+│   └── main.swift
+└── Tests/
+    └── AppTests.swift
+```
+
+共两个顶级目录。

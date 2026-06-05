@@ -1,0 +1,7 @@
+Example:[0m
+
+    let x = 1
+    let y = 2
+    print(x + y)
+
+That is all.

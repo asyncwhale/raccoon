@@ -1,0 +1,9 @@
+See the markdown sample below:
+````markdown
+Here is how to write code:
+```js
+const x = 42;
+```
+That was an inner fence.
+````
+End.

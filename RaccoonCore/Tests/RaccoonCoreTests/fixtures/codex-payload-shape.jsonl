@@ -1,0 +1,4 @@
+{"timestamp":"2026-03-12T09:00:00.000Z","type":"session_meta","payload":{"id":"codex-sess-abc123","cwd":"/Users/dev/my-app"}}
+{"timestamp":"2026-03-12T09:00:01.500Z","type":"message","payload":{"role":"user","content":[{"type":"input_text","text":"docker compose up fails with port 5432 already allocated"}]}}
+{"timestamp":"2026-03-12T09:00:05.123Z","type":"TurnContext","payload":{"context":"tool_call_in_progress"}}
+{"timestamp":"2026-03-12T09:00:08.456Z","type":"message","payload":{"role":"assistant","content":[{"type":"output_text","text":"Port 5432 is already in use. Run lsof -i :5432 to find the process, then stop it before starting the stack."}]}}

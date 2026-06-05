@@ -1,0 +1,8 @@
+该命令的参数结构如下：[0m
+
+```
+build --target release \
+    --output ./dist
+```
+
+上面就是全部参数。

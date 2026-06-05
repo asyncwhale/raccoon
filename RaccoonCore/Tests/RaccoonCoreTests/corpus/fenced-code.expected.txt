@@ -1,0 +1,6 @@
+Here is the code:
+```python
+def f(x):
+    return x + 1
+```
+Done.

@@ -1,0 +1,8 @@
+[plugins] chat_doc: Registered chat_doc
+
+Hooks (3/3 ready)
+Status    Hook                        Source
+✓ ready   🚀 boot-md                  demo-
+bundled
+✓ ready   📝 command-logger           demo-
+bundled

@@ -1,0 +1,52 @@
+# --- Generated Xcode project (run `xcodegen generate` to recreate) ---
+*.xcodeproj/
+
+# --- Xcode ---
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# --- Swift Package Manager ---
+.build/
+.swiftpm/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Signing & secrets (never commit) ---
+*.p12
+*.cer
+*.certSigningRequest
+*.provisionprofile
+*.mobileprovision
+.env
+*.local
+
+# --- Test corpus: anonymized fixtures are committed; raw captures are not ---
+# Match the raw-capture dir at any depth (the corpus lives under
+# RaccoonCore/Tests/RaccoonCoreTests/corpus/, so an unanchored deep glob is
+# required — a root-relative `Tests/corpus/_raw/` would NOT match it).
+**/corpus/_raw/
+
+# RaccoonCore/Package.resolved oscillates between standalone `swift test` and app `xcodebuild`
+# resolution (KeyboardShortcuts is an app dep, not a Core dep). App .xcodeproj keeps its own pins.
+RaccoonCore/Package.resolved
+
+# --- Local-only corpus harvesting aid (never commit) ---
+# One-time local script that scans private session logs and embeds the user's
+# real project/business names for anonymization; kept on disk, never tracked,
+# so its name dictionary never reaches the public repo.
+scripts/build_corpus.py
+
+# Internal dev planning docs (Superpowers workflow) — not for public repo
+docs/superpowers/

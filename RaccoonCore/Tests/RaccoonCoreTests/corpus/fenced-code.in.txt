@@ -1,0 +1,6 @@
+Here is the [1mcode[0m:
+```python
+def f(x):
+    return [32mx[0m + 1
+```
+Done.

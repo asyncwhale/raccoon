@@ -1,0 +1,6 @@
+Here is the config:
+  const cfg = {
+    sep: "│",
+    retries: 3,
+    nested: { enabled: true },
+  };

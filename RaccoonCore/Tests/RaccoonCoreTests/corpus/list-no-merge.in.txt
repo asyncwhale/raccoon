@@ -1,0 +1,4 @@
+- first item here
+- second item that is fairly long and wraps onto a continuation line below
+  because it exceeds the width of the block
+- third item

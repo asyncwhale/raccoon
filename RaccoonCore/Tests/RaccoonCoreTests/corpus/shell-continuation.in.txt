@@ -1,0 +1,4 @@
+docker run --rm -it \
+  --env FOO=bar \
+  --volume /data:/data \
+  myimage:latest

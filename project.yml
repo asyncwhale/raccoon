@@ -1,0 +1,66 @@
+name: Raccoon
+
+options:
+  bundleIdPrefix: dev.raccoon
+  deploymentTarget:
+    macOS: "14.0"
+  developmentLanguage: en
+  knownRegions:
+    - en
+    - zh-Hans
+    - Base
+
+packages:
+  RaccoonCore:
+    path: RaccoonCore
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: "2.0.0"
+
+targets:
+  Raccoon:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/Raccoon
+      - Resources
+    dependencies:
+      - package: RaccoonCore
+      - package: KeyboardShortcuts
+    settings:
+      base:
+        SWIFT_VERSION: "6.0"
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+        GENERATE_INFOPLIST_FILE: YES
+        MARKETING_VERSION: "0.1.0"
+        PRODUCT_BUNDLE_IDENTIFIER: dev.raccoon.Raccoon
+        INFOPLIST_KEY_LSMinimumSystemVersion: "14.0"
+        INFOPLIST_KEY_CFBundleDisplayName: Raccoon
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 asyncwhale. MIT License."
+    info:
+      path: Generated/Info.plist
+      properties:
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations:
+          - en
+          - zh-Hans
+      configs:
+        Debug:
+          # Debug: skip signing so contributors can build without credentials
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: ""
+          DEVELOPMENT_TEAM: ""
+        Release:
+          # Signing is OPTIONAL. To sign locally, set DEVELOPMENT_TEAM via an
+          # xcconfig or environment (e.g. ${DEVELOPMENT_TEAM}); left blank here so
+          # no personal Team ID ships in the public repo. An unsigned Release build
+          # runs fine via right-click → Open.
+          CODE_SIGN_STYLE: Automatic
+          CODE_SIGN_IDENTITY: "Developer ID Application"
+          DEVELOPMENT_TEAM: ${DEVELOPMENT_TEAM}
+          # Hardened Runtime is mandatory for notarization
+          ENABLE_HARDENED_RUNTIME: YES
+          # App Sandbox is intentionally OFF for Developer ID direct distribution
+          ENABLE_APP_SANDBOX: NO
+          # No network entitlement — Raccoon is zero-network by design
+          # (com.apple.security.network.client is deliberately absent)

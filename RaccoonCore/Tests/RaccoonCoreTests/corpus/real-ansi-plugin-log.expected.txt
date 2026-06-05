@@ -1,0 +1,4 @@
+[plugins] chat_doc: Registered chat_doc, chat_app_scopes
+[plugins] chat_send: Registered chat_send tool
+[plugins] chat_wiki: Registered chat_wiki tool
+error: unknown command 'schedule'
