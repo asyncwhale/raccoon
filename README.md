@@ -1,13 +1,14 @@
 # Raccoon 🦝
 
+**English | [简体中文](README.zh-CN.md)**
+
 **Local memory layer for terminal-AI users.**
 
 Raccoon is a pinnable, Sublime-style Markdown editor that gives your AI-assisted terminal workflow a persistent brain — **100% local, zero-network, free, and open-source.**
 
 The mascot is a raccoon because raccoons wash things. That is exactly what Raccoon does to your messy terminal output.
 
-> README is English-primary for now. A Simplified Chinese README is planned;
-> the app UI itself is already bilingual (English / 简体中文).
+> The app UI is bilingual (English / 简体中文) and follows your system language.
 
 ---
 
@@ -87,25 +88,9 @@ nettop -p "$(pgrep -x Raccoon)"      # shows no connections
 
 ---
 
-## Install
+## Build &amp; Run
 
-### Option A — Download (signed + notarized DMG)
-
-1. Go to [Releases](https://github.com/asyncwhale/raccoon/releases).
-2. Download `Raccoon-<version>.dmg`.
-3. Open the DMG, drag `Raccoon.app` to Applications.
-
-The DMG is signed with a Developer ID Application certificate and notarized by Apple. Gatekeeper will not block it.
-
-### Option B — Homebrew Cask
-
-```sh
-brew install --cask asyncwhale/homebrew-tap/raccoon
-```
-
----
-
-## Build from Source
+Raccoon is distributed as source. Build it yourself:
 
 Requirements: macOS 14+, Xcode 16+, [XcodeGen](https://github.com/yonaskolb/XcodeGen).
 
@@ -113,12 +98,12 @@ Requirements: macOS 14+, Xcode 16+, [XcodeGen](https://github.com/yonaskolb/Xcod
 git clone https://github.com/asyncwhale/raccoon.git
 cd raccoon
 xcodegen generate
-open Raccoon.xcodeproj
+open Raccoon.xcodeproj    # then ⌘R to build & run
 ```
 
 Swift Package Manager resolves dependencies (`RaccoonCore`, `KeyboardShortcuts`) automatically when Xcode opens the project.
 
-**Run the core library tests** (no Xcode needed):
+**Run the core library tests** (no Xcode IDE needed):
 
 ```sh
 cd RaccoonCore
